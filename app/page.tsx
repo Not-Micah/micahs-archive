@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="content-container">
       <div className="tag-component">
-        Micah's Archive
+        Micah&apos;s Archive
       </div>
       
       <h1 className="main-heading">Developer Tools</h1>

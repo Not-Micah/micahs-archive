@@ -52,7 +52,7 @@ git push -u origin main`}</code>
         <div className="content-block">
           <h3 className="block-heading">Switch To A Specific Branch</h3>
           <pre className="code-snippet">
-            <code>git checkout 'branch_name'</code>
+            <code>git checkout &apos;branch_name&apos;</code>
           </pre>
         </div>
 
@@ -66,7 +66,7 @@ git push -u origin main`}</code>
         <div className="content-block">
           <h3 className="block-heading">Commit Changes With Message</h3>
           <pre className="code-snippet">
-            <code>git commit -m "message"</code>
+            <code>git commit -m &quot;message&quot;</code>
           </pre>
         </div>
 
@@ -95,7 +95,7 @@ git push -u origin main`}</code>
         <div className="content-block">
           <h3 className="block-heading">Create And Switch To A New Branch</h3>
           <pre className="code-snippet">
-            <code>git checkout -b 'branch_name'</code>
+            <code>git checkout -b &apos;branch_name&apos;</code>
           </pre>
         </div>
       </section>
