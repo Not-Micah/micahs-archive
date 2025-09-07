@@ -1,8 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
 const ClaudeCodePlaybook: React.FC = () => {
   return (
     <div className="content-container">
+      <div className="back-button-container">
+        <Link href="/" className="back-button">
+          ← Back to Directory
+        </Link>
+      </div>
+      
       <div className="tag-component">
         Developer Tools
       </div>
@@ -22,7 +29,7 @@ const ClaudeCodePlaybook: React.FC = () => {
 git add .
 git commit -m "initial commit"
 git branch -M main
-git remote add origin {repo-url}
+git remote add origin repo-url
 git push -u origin main`}</code>
           </pre>
         </div>
