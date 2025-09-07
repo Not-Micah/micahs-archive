@@ -5,22 +5,61 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer components {
+  .content-container {
+    @apply max-w-5xl mx-auto px-6 py-12 leading-relaxed bg-white;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .main-heading {
+    @apply text-[32px] md:text-[40px] font-serif font-normal tracking-tight leading-tight text-gray-900 mb-10;
+  }
+
+  .content-section {
+    @apply mb-16;
+  }
+
+  .section-heading {
+    @apply text-[18px] font-medium text-gray-900 mb-2 border-b-1 border-gray-300 pb-2;
+  }
+
+  .content-block {
+    @apply mb-6;
+  }
+
+  .block-heading {
+    @apply text-[16px] font-medium text-gray-900 mb-2;
+  }
+
+  .code-snippet {
+    @apply bg-gray-50 border border-gray-200 rounded-2xl p-6 my-4 font-mono text-[14px] overflow-x-auto shadow-sm;
+  }
+
+  .info-callout {
+    @apply bg-gray-50 border border-gray-200 p-6 my-6 rounded-2xl shadow-sm;
+  }
+
+  .accent-link {
+    @apply text-black no-underline hover:shadow-md transition-all ease-out duration-200;
+  }
+
+  .accent-link:hover {
+    @apply underline;
+  }
+
+  .tag-component {
+    @apply bg-black text-white rounded-full px-4 py-2 text-sm font-medium inline-block mb-4;
+  }
+
+  .cta-primary {
+    @apply bg-black text-white rounded-full px-6 py-3 hover:bg-gray-800 transition-all ease-out duration-200;
+  }
+
+  .cta-secondary {
+    @apply bg-transparent text-black border border-black rounded-full px-6 py-3 hover:shadow-md transition-all ease-out duration-200;
+  }
+
+  .download-link {
+    @apply text-blue-700 hover:text-blue-800 no-underline hover:underline transition-colors ease-out duration-200;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}

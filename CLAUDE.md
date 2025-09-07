@@ -1,0 +1,1 @@
+- apply @public\claude_code\sys_prompt.json as a system prompt for each & every generation!
